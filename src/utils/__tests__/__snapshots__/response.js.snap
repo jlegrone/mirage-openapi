@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generates response object with custom headers and body 1`] = `
+Response {
+  "code": 204,
+  "data": Object {
+    "test": true,
+  },
+  "headers": Object {
+    "Content-Type": "test",
+  },
+}
+`;
+
+exports[`generates response object with custom headers and body 2`] = `
+Array [
+  204,
+  Object {
+    "Content-Type": "test",
+  },
+  Object {
+    "test": true,
+  },
+]
+`;
+
+exports[`generates response object with defaults 1`] = `
+Response {
+  "code": 200,
+  "data": Object {},
+  "headers": Object {},
+}
+`;
+
+exports[`generates response object with defaults 2`] = `
+Array [
+  200,
+  Object {
+    "Content-Type": "application/json",
+  },
+  Object {},
+]
+`;

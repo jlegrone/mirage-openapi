@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mirage openAPI instance matches existing dynamic route 1`] = `
+RecognizeResults {
+  "0": Object {
+    "handler": Object {
+      "delete": [Function],
+      "get": [Function],
+      "post": [Function],
+    },
+    "isDynamic": true,
+    "params": Object {
+      "petId": "0",
+    },
+  },
+  "length": 1,
+  "queryParams": Object {},
+}
+`;
+
+exports[`mirage openAPI instance matches existing route 1`] = `
+RecognizeResults {
+  "0": Object {
+    "handler": Object {
+      "post": [Function],
+      "put": [Function],
+    },
+    "isDynamic": false,
+    "params": Object {},
+  },
+  "length": 1,
+  "queryParams": Object {},
+}
+`;
+
+exports[`mirage openAPI instance responds with example data 1`] = `
+"{
+  \\"cats\\": 42,
+  \\"dogs\\": 9,
+  \\"lizards\\": 1201
+}"
+`;
+
+exports[`mirage openAPI instance throws error for missing namespace 1`] = `
+[Error: MirageOpenAPI: There is no route defined which matches http://example.com.
+This url does not match any existing namespaces.]
+`;
+
+exports[`mirage openAPI instance throws error for missing route 1`] = `
+[Error: MirageOpenAPI: There is no route defined which matches http://petstore.swagger.io/v2/foo.
+There is no handler available in your openAPI config for this route and HTTP method.]
+`;
+
+exports[`mirage openAPI instance throws error for missing route method 1`] = `[TypeError: handler is not a function]`;
+
+exports[`mirage openAPI instance validates bad requests 1`] = `
+Object {
+  "errors": Array [
+    Object {
+      "code": "INVALID_REQUEST_PARAMETER",
+      "errors": Array [
+        Object {
+          "code": "OBJECT_MISSING_REQUIRED_PROPERTY",
+          "message": "Missing required property: photoUrls",
+          "params": Array [
+            "photoUrls",
+          ],
+          "path": Array [],
+        },
+        Object {
+          "code": "OBJECT_MISSING_REQUIRED_PROPERTY",
+          "message": "Missing required property: name",
+          "params": Array [
+            "name",
+          ],
+          "path": Array [],
+        },
+      ],
+      "in": "body",
+      "message": "Invalid parameter (body): Value failed JSON Schema validation",
+      "name": "body",
+      "path": Array [
+        "paths",
+        "/pet",
+        "post",
+        "parameters",
+        "0",
+      ],
+    },
+  ],
+  "warnings": Array [],
+}
+`;

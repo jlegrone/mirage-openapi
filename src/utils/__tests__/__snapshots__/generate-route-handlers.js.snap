@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generate route handlers generates handler objects 1`] = `
+Array [
+  Object {
+    "handler": Object {
+      "post": [Function],
+      "put": [Function],
+    },
+    "path": "/pet",
+  },
+  Object {
+    "handler": Object {
+      "get": [Function],
+    },
+    "path": "/pet/findByStatus",
+  },
+  Object {
+    "handler": Object {
+      "get": [Function],
+    },
+    "path": "/pet/findByTags",
+  },
+  Object {
+    "handler": Object {
+      "delete": [Function],
+      "get": [Function],
+      "post": [Function],
+    },
+    "path": "/pet/:petId",
+  },
+  Object {
+    "handler": Object {
+      "post": [Function],
+    },
+    "path": "/pet/:petId/uploadImage",
+  },
+  Object {
+    "handler": Object {
+      "get": [Function],
+    },
+    "path": "/store/inventory",
+  },
+  Object {
+    "handler": Object {
+      "post": [Function],
+    },
+    "path": "/store/order",
+  },
+  Object {
+    "handler": Object {
+      "delete": [Function],
+      "get": [Function],
+    },
+    "path": "/store/order/:orderId",
+  },
+  Object {
+    "handler": Object {
+      "post": [Function],
+    },
+    "path": "/user",
+  },
+  Object {
+    "handler": Object {
+      "post": [Function],
+    },
+    "path": "/user/createWithArray",
+  },
+  Object {
+    "handler": Object {
+      "post": [Function],
+    },
+    "path": "/user/createWithList",
+  },
+  Object {
+    "handler": Object {
+      "get": [Function],
+    },
+    "path": "/user/login",
+  },
+  Object {
+    "handler": Object {
+      "get": [Function],
+    },
+    "path": "/user/logout",
+  },
+  Object {
+    "handler": Object {
+      "delete": [Function],
+      "get": [Function],
+      "put": [Function],
+    },
+    "path": "/user/:username",
+  },
+]
+`;

@@ -1,0 +1,62 @@
+{
+  "name": "mirage-openapi",
+  "version": "0.0.0-alpha.2",
+  "description": "Mock OpenAPI responses in ember-cli-mirage",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rimraf lib && babel src --out-dir=lib --ignore=__tests__,__mocks__",
+    "watch": "yarn run build -- --watch",
+    "prepublish": "yarn run build && yarn test",
+    "lint": "eslint ./",
+    "test": "jest --coverage",
+    "test:watch": "jest --coverage=false --watch",
+    "generate": "node lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jlegrone/mirage-openapi.git"
+  },
+  "keywords": ["ember", "mirage", "openAPI", "swagger"],
+  "author": "Jacob LeGrone <npm@jacob.work> (https://jacoblegrone.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jlegrone/mirage-openapi/issues"
+  },
+  "homepage": "https://github.com/jlegrone/mirage-openapi#readme",
+  "engines": {
+    "node": ">=6"
+  },
+  "jest": {
+    "collectCoverageFrom": ["src/**/*.js"],
+    "collectCoverage": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 95,
+        "functions": 95,
+        "lines": 95,
+        "statements": 95
+      }
+    }
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "route-recognizer": "^0.3.3",
+    "sway": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.4.1",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jest": "^20.0.3",
+    "eslint-plugin-node": "^5.1.1",
+    "jest": "^20.0.4"
+  },
+  "peerDependencies": {
+    "ember-cli-mirage": "^0.3.4"
+  }
+}

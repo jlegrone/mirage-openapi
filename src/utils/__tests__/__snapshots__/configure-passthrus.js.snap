@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`adds openAPI config url passthrough 1`] = `Object {}`;
