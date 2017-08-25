@@ -1,6 +1,6 @@
 {
   "name": "mirage-openapi",
-  "version": "0.0.0-alpha.2",
+  "version": "0.0.0-alpha.3",
   "description": "Mock OpenAPI responses in ember-cli-mirage",
   "main": "lib/index.js",
   "scripts": {
@@ -9,8 +9,7 @@
     "prepublish": "yarn run build && yarn test",
     "lint": "eslint ./",
     "test": "jest --coverage",
-    "test:watch": "jest --coverage=false --watch",
-    "generate": "node lib/index.js"
+    "test:watch": "jest --coverage=false --watch"
   },
   "repository": {
     "type": "git",
@@ -49,14 +48,15 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.0",
-    "eslint": "^4.4.1",
-    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb-base": "^11.3.2",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jest": "^20.0.3",
     "eslint-plugin-node": "^5.1.1",
     "jest": "^20.0.4"
   },
   "peerDependencies": {
+    "ember-browserify": "^1.2.0",
     "ember-cli-mirage": "^0.3.4"
   }
 }
