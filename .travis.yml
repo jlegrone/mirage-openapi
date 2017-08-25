@@ -10,9 +10,14 @@ node_js:
   - '7'
   - '8'
 before_install:
-  - npm install -g yarn codecov
+  - npm install -g yarn codecov greenkeeper-lockfile
 install:
   - yarn install
+before_script:
+  - greenkeeper-lockfile-update
 script:
   - yarn lint
-  - yarn test -- --verbose && codecov
+  - yarn test -- --verbose
+after_script:
+  - codecov
+  - greenkeeper-lockfile-upload
