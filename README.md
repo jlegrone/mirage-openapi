@@ -7,6 +7,8 @@
 
 **mirage-openapi** is a plugin for ember-cli-mirage that consumes openAPI/swagger documentation and mocks endpoints at runtime.
 
+This package pairs well with [ember-cli-openapi-generate](https://www.npmjs.com/package/ember-cli-openapi-generate).
+
 ## Install
 
 ```
