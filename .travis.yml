@@ -9,6 +9,7 @@ node_js:
   - '6'
   - '7'
   - '8'
+  - '10'
 before_install:
   - npm install -g yarn codecov greenkeeper-lockfile
 install:
